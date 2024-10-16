@@ -6,7 +6,7 @@ int main()
     printf("Enter size of circular queue: ");
     scanf("%d",&n);
     int queue[n];
-    while(1)
+    do
     {
     printf("\nOPERATIONS");
     printf("\n1.Enqueue\n2.Dequeue\n3.Display\n4.Exit\n");
@@ -63,7 +63,10 @@ int main()
     case 4:
     printf("Exiting...");
     break;
-    default:printf("Invalid choice");
+    default:
+        printf("Invalid choice");
+        break;
     }}
+    while(op!=4);
     return 0;
 }
